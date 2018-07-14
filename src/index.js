@@ -2,12 +2,14 @@
 export { 
     Button, 
     BtnDanger, 
-    BtnPrimary, 
+    BtnPrimary,
+    BtnInfo, 
     BtnSuccess,
     BtnAlternate,
     BtnWarning,
     BtnDangerOtl, 
     BtnPrimaryOtl, 
+    BtnInfoOtl,
     BtnSuccessOtl,
     BtnAlternateOtl,
     BtnWarningOtl } 

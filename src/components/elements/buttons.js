@@ -29,11 +29,6 @@ export const BtnPrimary = Button.extend `
   background-color: ${props => props.color ? props.color : Colors.primary};
   background-image: none;
   border-color: ${props => props.color ? props.color : Colors.primary};
-    &: hover {
-    background-color:${props => props.color ? props.color : Colors.primaryHover};
-    border-color: ${props => props.color ? props.color : Colors.primaryHover};
-    color: #fff;
-  }
 `;
 
 export const BtnSuccess = Button.extend `
@@ -41,11 +36,6 @@ export const BtnSuccess = Button.extend `
   background-color: ${props => props.color ? props.color : Colors.success};
   background-image: none;
   border-color: ${props => props.color ? props.color : Colors.success};
-    &: hover {
-    background-color: ${props => props.color ? props.color : Colors.successHover};
-    border-color: ${props => props.color ? props.color : Colors.successHover};
-    color: #fff;
-  }
 `;
 
 export const BtnDanger = Button.extend `
@@ -53,23 +43,19 @@ export const BtnDanger = Button.extend `
   background-color: ${props => props.color ? props.color : Colors.danger};
   background-image: none;
   border-color: ${props => props.color ? props.color : Colors.danger};
-    &: hover {
-    background-color: ${props => props.color ? props.color : Colors.dangerHover};
-    border-color:${props => props.color ? props.color : Colors.dangerHover};
-    color: #fff;
-  }
 `;
 
+export const BtnInfo = Button.extend `
+  color: #fff;
+  background-color: ${props => props.color ? props.color : Colors.info};
+  background-image: none;
+  border-color: ${props => props.color ? props.color : Colors.info};
+`;
 export const BtnAlternate = Button.extend `
   color: #fff;
   background-color: ${props => props.color ? props.color : Colors.alternate};
   background-image: none;
   border-color: ${props => props.color ? props.color : Colors.alternate};
-    &: hover {
-    background-color: ${props => props.color ? props.color : Colors.alternateHover};
-    border-color: ${props => props.color ? props.color : Colors.alternateHover};
-    color: #fff;
-  }
 `;
 
 export const BtnWarning = Button.extend `
@@ -77,11 +63,6 @@ export const BtnWarning = Button.extend `
   background-color: ${props => props.color ? props.color : Colors.warning};
   background-image: none;
   border-color: ${props => props.color ? props.color : Colors.warning};
-    &: hover {
-    background-color: ${props => props.color ? props.color : Colors.warningHover};
-    border-color: ${props => props.color ? props.color : Colors.warningHover};
-    color: #fff;
-  }
 `;
 
 export const BtnPrimaryOtl = Button.extend `
@@ -116,7 +97,16 @@ export const BtnDangerOtl = Button.extend `
     color: #fff;
   }
 `;
-
+export const BtnInfoOtl = Button.extend `
+  color: ${props => props.color ? props.color : Colors.info};
+  background-color: transparent;
+  background-image: none;
+  border-color: ${props => props.color ? props.color : Colors.info};
+    &: hover {
+    background-color: ${props => props.color ? props.color : Colors.info};
+    color: #fff;
+  }
+`;
 export const BtnAlternateOtl = Button.extend `
   color: ${props => props.color ? props.color : Colors.alternate};
   background-color: transparent;

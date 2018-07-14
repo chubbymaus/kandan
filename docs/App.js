@@ -2,7 +2,9 @@ import React from 'react'
 
 import { Button, BtnPrimaryOtl, BtnSuccessOtl, BtnDangerOtl, BtnWarningOtl, BtnAlternateOtl,
   BtnDanger, 
-  BtnPrimary, 
+  BtnPrimary,
+  BtnInfo,
+  BtnInfoOtl, 
   BtnSuccess,
   BtnAlternate,
   BtnWarning, Card, Container} from 'kandan'
@@ -38,13 +40,15 @@ const App = () => {
   <BtnSuccess>hello world</BtnSuccess>
   </Card>
   </Container>
-
+<BtnSuccess>hello world</BtnSuccess>
   <BtnDanger>hello world</BtnDanger>
   <BtnWarning>Hello world</BtnWarning>
   <BtnAlternate>hello world</BtnAlternate>
+  <BtnInfo>hello world</BtnInfo>
   <BtnPrimaryOtl>Hello world</BtnPrimaryOtl>
   <BtnSuccessOtl>hello world</BtnSuccessOtl>
   <BtnDangerOtl>hello world</BtnDangerOtl>
+  <BtnInfoOtl>hello world</BtnInfoOtl>
   <BtnWarningOtl>Hello world</BtnWarningOtl>
   <BtnAlternateOtl>hello world</BtnAlternateOtl>
   

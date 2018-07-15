@@ -14,6 +14,7 @@ export const Button = styled.button`
     padding: 0.5em 1em;
     margin-left: ${props => props.firstChildLeft ? '0': '1em'};
     margin-right: ${props => props.firstChildRight ? '0': '1em'};
+    width: ${props => props.btnWidth ? props.btnWidth: 'auto'};
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;

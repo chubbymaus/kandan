@@ -17,3 +17,5 @@ export {
 
 export { Card } from './components/elements/cards';
 export { Container } from './components/layouts/container';
+export { Navbar } from './components/navigations/navbar';
+

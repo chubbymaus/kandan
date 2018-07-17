@@ -19,9 +19,11 @@ export const Button = styled.button`
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     border-radius: .20rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .10s ease-in-out,background-color .10s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+
     @media (max-width: 768px){
-        margin: 1em;
+        margin: 0.5rem ;
     }
 `;
 

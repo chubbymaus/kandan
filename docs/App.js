@@ -7,17 +7,36 @@ import { Button, BtnPrimaryOtl, BtnSuccessOtl, BtnDangerOtl, BtnWarningOtl, BtnA
   BtnInfoOtl, 
   BtnSuccess,
   BtnAlternate,
-  BtnWarning, Card, Container} from 'kandan'
+  BtnWarning, Card, Container, Navbar} from 'kandan'
+import { Colors } from '../src/components/colors';
+import styled from 'styled-components';
+import {injectGlobal} from 'styled-components'
 
+injectGlobal `
+  @font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+`;
 
 
 const App = () => {
   return(
+ 
   <div>
+  <Navbar>
+   <p>test</p>
+  </Navbar>
   <Container>
-  <Card hasShadow>
+  <div>
+  <Card hasShadow hrColor={Colors.success}>
   <h3>Decentralized data drive</h3>
-            <hr/>
+            <hr />
             <p>A company can store and manage their data on Squibly’s
              decentralized database for optimal security. Capable of storing 
              videos, pictures, music, and files. Companies can create permissions for 
@@ -25,7 +44,7 @@ const App = () => {
              to access their data. Squibly’s built in automations make storing 
              data on the drive seamless and simple.</p>
   <BtnPrimary hasShadow firstChildLeft>Hello world</BtnPrimary>
-  <BtnSuccess >hello world</BtnSuccess>
+  <BtnSuccess hasShadow>hello world</BtnSuccess>
   </Card>
   <Card hasShadow>
   <h3>Decentralized data drive</h3>
@@ -39,7 +58,7 @@ const App = () => {
   <BtnPrimary hasShadow>Hello world</BtnPrimary>
   <BtnSuccess>hello world</BtnSuccess>
   </Card>
-  </Container>
+  </div>
 <BtnSuccess>hello world</BtnSuccess>
   <BtnDanger>hello world</BtnDanger>
   <BtnWarning>Hello world</BtnWarning>
@@ -51,8 +70,9 @@ const App = () => {
   <BtnInfoOtl>hello world</BtnInfoOtl>
   <BtnWarningOtl>Hello world</BtnWarningOtl>
   <BtnAlternateOtl>hello world</BtnAlternateOtl>
-  
+  </Container>
   </div>
+  
   )
 }
 

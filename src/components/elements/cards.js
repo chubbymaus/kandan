@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Colors } from '../colors';
 
 export const Card = styled.div`
     background-color: #fefefe;
@@ -6,5 +7,18 @@ export const Card = styled.div`
     padding: 2rem;
     font-family: 'Ubuntu', sans-serif;
     border-radius: .20rem;
-
+    margin: 1rem .5rem;
+    
+    h1, h2, h3 {
+        margin-bottom: .5rem;
+    }
+    hr{
+        
+        height: 5px;
+        color: ${Colors.alternate};
+        background: ${props => props.hrColor ? props.hrColor  : Colors.danger};
+        border: none;
+        max-width: 75px;
+        margin: 0px;
+    }
 `;

@@ -1,13 +1,12 @@
 import React from 'react'
 
-import { Button, BtnPrimaryOtl, BtnSuccessOtl, BtnDangerOtl, BtnWarningOtl, BtnAlternateOtl,
+import { Button, BtnPrimaryOtl, BtnSuccessOtl, BtnDangerOtl, 
   BtnDanger, 
   BtnPrimary,
   BtnInfo,
   BtnInfoOtl, 
   BtnSuccess,
-  BtnAlternate,
-  BtnWarning, Card, Container, Navbar} from 'kandan'
+ Card, Container, Navbar} from 'kandan'
 import { Colors } from '../src/components/colors';
 import styled from 'styled-components';
 import {injectGlobal} from 'styled-components'
@@ -61,15 +60,13 @@ const App = () => {
   </div>
 <BtnSuccess>hello world</BtnSuccess>
   <BtnDanger>hello world</BtnDanger>
-  <BtnWarning>Hello world</BtnWarning>
-  <BtnAlternate>hello world</BtnAlternate>
+
   <BtnInfo>hello world</BtnInfo>
   <BtnPrimaryOtl>Hello world</BtnPrimaryOtl>
   <BtnSuccessOtl>hello world</BtnSuccessOtl>
   <BtnDangerOtl>hello world</BtnDangerOtl>
   <BtnInfoOtl>hello world</BtnInfoOtl>
-  <BtnWarningOtl>Hello world</BtnWarningOtl>
-  <BtnAlternateOtl>hello world</BtnAlternateOtl>
+
   </Container>
   </div>
   

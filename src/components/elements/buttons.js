@@ -54,19 +54,7 @@ export const BtnInfo = Button.extend `
   background-image: none;
   border-color: ${props => props.color ? props.color : Colors.info};
 `;
-export const BtnAlternate = Button.extend `
-  color: #fff;
-  background-color: ${props => props.color ? props.color : Colors.alternate};
-  background-image: none;
-  border-color: ${props => props.color ? props.color : Colors.alternate};
-`;
 
-export const BtnWarning = Button.extend `
-  color: #fff;
-  background-color: ${props => props.color ? props.color : Colors.warning};
-  background-image: none;
-  border-color: ${props => props.color ? props.color : Colors.warning};
-`;
 
 export const BtnPrimaryOtl = Button.extend `
   color: ${props => props.color ? props.color : Colors.primary};
@@ -107,27 +95,6 @@ export const BtnInfoOtl = Button.extend `
   border-color: ${props => props.color ? props.color : Colors.info};
     &: hover {
     background-color: ${props => props.color ? props.color : Colors.info};
-    color: #fff;
-  }
-`;
-export const BtnAlternateOtl = Button.extend `
-  color: ${props => props.color ? props.color : Colors.alternate};
-  background-color: transparent;
-  background-image: none;
-  border-color: ${props => props.color ? props.color : Colors.alternate};
-    &: hover {
-    background-color: ${props => props.color ? props.color : Colors.alternate};
-    color: #fff;
-  }
-`;
-
-export const BtnWarningOtl = Button.extend `
-  color: ${props => props.color ? props.color : Colors.warning};
-  background-color: transparent;
-  background-image: none;
-  border-color: ${props => props.color ? props.color : Colors.warning};
-    &: hover {
-    background-color: ${props => props.color ? props.color : Colors.warning};
     color: #fff;
   }
 `;
